@@ -7,7 +7,7 @@ export default function Login() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/login", data);
+      const res = await axios.post("https://exp8-s8ar.onrender.com/login", data);
 
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("role", res.data.role);
